@@ -1,0 +1,35 @@
+.rates {
+    
+}
+
+.rates--list {
+    margin: 0;
+    list-style: none;
+}
+
+.rates--item {
+    @include clearfix;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.rates--title,
+.rates--price {
+    @include font-size(20);
+    color: $white;
+    line-height: 30px;
+}
+
+.rates--title {
+    float: left;
+}
+
+.rates--price {
+    float: right;
+}
+
+.rates--line {
+    height: 1px;
+    margin: -10px 0 10px;
+    border-bottom: 1px solid lighten($secondary, 20%);
+}

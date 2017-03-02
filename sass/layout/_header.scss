@@ -1,0 +1,53 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: $h-header;
+    padding: 0 10%;
+    background-color: $primary;
+    
+    @include bp(880) {
+        position: static;
+    }
+}
+
+.logo {
+    float: left;
+    font-size: $h-header - 14px;
+    font-weight: 400;
+    color: $white;
+    line-height: $h-header;
+        
+    a {
+        display: block;
+        @include link-colors($white, $white);
+        text-decoration: none;
+    }
+    
+    @include bp(1040) {
+        float: none;
+        text-align: center;
+    }
+}
+
+nav {
+    float: right;
+    
+    @include bp(1040) {
+        display: none;
+    }
+}
+
+.nav--link {
+    display: inline-block;
+    padding: 0 10px;
+    @include link-colors($white, $white);
+    line-height: $h-header;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: $secondary;
+    }
+}

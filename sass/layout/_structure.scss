@@ -1,0 +1,28 @@
+body {
+	min-width: 320px;
+    padding-top: $h-header;
+    background-color: #F5F4F4;
+    
+    @include bp(880) {
+        padding-top: 0;
+    }
+}
+
+section {
+    margin: 30px 10%;
+    padding: 20px 0;
+    
+    @include bp(1040) {
+        margin: 30px 5%;
+    }
+    
+    @include bp(520) {
+        padding: 14px 5%;
+    }
+}
+
+.section--title {
+    margin-bottom: 30px;
+    color: $primary;
+    text-align: center;
+}

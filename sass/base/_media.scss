@@ -1,0 +1,32 @@
+img {
+	max-width: 100%;
+}
+
+.popup_link {
+	display: block;
+	position: relative;
+	cursor: zoom-in;
+
+	&:hover {
+
+		i {
+			background-color: $primary;
+		}
+	}
+
+	i {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 24px;
+		background-color: $heather;
+		font-size: 18px;
+		color: $white;
+		text-align: center;
+		line-height: 24px;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

@@ -1,0 +1,80 @@
+.contact {
+}
+
+.contact_form {
+    background-color: $white;
+    border: 3px solid $primary;
+    padding: 40px 5% 10px;    
+    
+    .form_block {
+        margin-bottom: 30px;
+        
+        &.buttons {
+            margin-top: 30px;
+        }
+    }
+}
+
+.contact_form--input,
+.contact_form--textarea {
+    padding: 10px 8px 8px;
+    border: 2px solid transparent;
+    border-bottom-color: $primary;
+    
+    &:focus {
+        outline: none;
+        border-color: $primary;
+    }
+}
+
+.contact_form--textarea {
+    min-height: 60px;
+}
+
+.contact_form--label {
+    padding: 6px 2px 0;
+    @include font-size(18);
+    color: $secondary;
+    text-align: center;
+}
+
+.contact_form--submit {
+    float: right;
+    width: 70%;
+    max-width: 70%;
+    @include font-size(24);
+    
+    @include bp(940) {
+        width: 60%;
+        max-width: 60%;
+    }
+    
+    @include bp(560) {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.contact_form--rates {
+    float: left;
+    width: 25%;
+    max-width: 25%;
+
+    &:focus,
+    &:hover {
+        outline: none;
+    }
+    
+    @include bp(940) {
+        width: 35%;
+        max-width: 35%;
+    }
+    
+    @include bp(560) {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,8 @@
+a {
+    @include link-colors($secondary, $primary, $highlight);
+    transition: all $t-fast;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

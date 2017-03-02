@@ -1,0 +1,32 @@
+// 1. Configuration and helpers
+@import 'utils/variables';
+@import 'utils/color';
+@import 'utils/mixins';
+
+// 2. Vendors
+@import 'vendor/normalize';
+@import 'vendor/magnific-popup';
+
+// 3. Base stuff
+@import 'base/base';
+@import 'base/buttons';
+@import 'base/forms';
+@import 'base/links';
+@import 'base/media';
+@import 'base/typography';
+
+// 4. Layout-related sections
+@import 'layout/structure';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/modals';
+
+// 6. Components
+@import 'components/articles';
+@import 'components/books';
+@import 'components/contact';
+@import 'components/hero';
+@import 'components/interviews';
+@import 'components/projects';
+@import 'components/rates';
+@import 'components/reviews';

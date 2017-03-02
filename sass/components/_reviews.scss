@@ -1,0 +1,54 @@
+.reviews {
+    
+}
+
+.review {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    background-color: $secondary;
+    
+    &.two,
+    &.three {
+        margin-left: 5%;
+    }
+    
+    @include bp(1240) {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px!important;
+    }
+}
+
+.review--title {
+    margin-bottom: 20px;
+    @include font-size(20);
+    color: $white;
+}
+
+.review--text {
+    @include font-size(18);
+    color: $lilia;
+    
+    i {
+        margin-top: 0.2em;
+        @include font-size(28);
+    }
+    
+    strong {
+        color: $white;
+    }
+}
+
+.review--author {
+    display: block;
+    margin-top: 14px;
+    @include font-size(18);
+    @include link-colors($lilia, $lilia);
+    text-decoration: none;
+    text-align: right;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

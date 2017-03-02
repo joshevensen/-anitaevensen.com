@@ -1,0 +1,48 @@
+.btn {
+    display: block;
+    max-width: 360px;
+    padding: 16px 20px;
+	background-color: $white;
+	border: 3px solid $highlight;
+    border-radius: 6px;
+    color: $highlight;
+    @include link-colors($highlight, $white);
+    @include font-size(20);
+    font-weight: 700;
+	line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all $t-fast;
+    
+    &:focus,
+    &:hover {
+        background-color: $highlight;
+        color: $white;
+    }
+    
+    &.primary {
+        background-color: $highlight;
+        border: none;
+        color: $white;
+        @include link-colors($white, $white);
+        
+        &:focus,
+        &:hover {
+            background-color: $secondary;
+            color: $white;
+        }
+    }
+    
+    &.white {
+        background-color: transparent;
+        border: 2px solid $white;
+        color: $white;
+        @include link-colors($white, $secondary);
+
+        &:focus,
+        &:hover {
+            background-color: $white;
+            color: $secondary;
+        }
+    }
+}

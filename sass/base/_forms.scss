@@ -1,0 +1,87 @@
+*:focus {
+	outline-color: $raven;
+}
+
+::-webkit-input-placeholder {
+   color: $rock;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $rock;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $rock;
+}
+
+:-ms-input-placeholder {
+   color: $rock;
+}
+
+
+// #FormBasics
+// ---------------------------------------
+form {
+    position: relative;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 8px 6px;
+	border: 1px solid $primary;
+}
+
+select {
+    padding: 7px 6px;
+}
+
+textarea {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+label {
+	display: block;
+	padding-bottom: 6px;
+    @include font-size(16);
+	color: $stone;
+}
+
+
+// #FormModules
+// ---------------------------------------
+.form_block {
+    position: relative;
+    clear: both;
+	margin-bottom: 14px;
+    
+    &.right,
+    &.left {
+        clear: none;
+        width: 48%;
+        
+        @include bp(720) {
+            float: none!important;
+            width: 100%;
+        }
+    }
+    
+    &.right {
+        float: right;
+    }
+    
+    &.left {
+        float: left;
+    }
+    
+    &.tree {
+        display: none;
+    }
+    
+    &.buttons {
+        @include clearfix;
+        width: 100%;
+    }
+}

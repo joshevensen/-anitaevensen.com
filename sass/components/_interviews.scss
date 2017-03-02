@@ -1,0 +1,40 @@
+.interviews {
+}
+
+.interviews--item {
+    width: 46%;
+    padding: 20px;
+    background-color: $white;
+    border: 3px solid $primary;
+    
+    &.left {
+        float: left;
+    }
+    
+    &.right {
+        float: right;
+    }
+    
+    @include bp(800) {
+        width: 100%;
+        margin-bottom: 30px;
+        float: none!important;
+    }
+}
+
+.interviews--title {
+    margin-bottom: 30px;
+    color: $secondary;
+    text-align: center;
+}
+
+
+.interviews--description {
+    margin-bottom: 10px;
+}
+
+
+.interviews--button {
+    max-width: 100%;
+    margin-top: 24px;
+}

@@ -1,0 +1,47 @@
+// Clearfix
+@mixin clearfix() {
+  content: "";
+  display: table;
+
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 16)  + rem;
+}
+
+
+// Link Colors
+@mixin link-colors($default: inherit, $hover: inherit, $active: inherit) {
+  &:link,
+  &:visited {
+    color: $default;
+  }
+  &:active,
+  &.active {
+    color: $active;
+  }
+  &:hover {
+    color: $hover;
+  }
+}
+
+
+// Border radius
+@mixin border-radius($radius) {
+  background-clip: padding-box;
+  border-radius: $radius;
+}
+
+
+// Media Query
+@mixin bp($width) {
+    @media (max-width: ($width / 16) + em) {
+        @content;
+    }
+}

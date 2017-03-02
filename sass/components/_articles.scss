@@ -1,0 +1,54 @@
+.articles {
+    
+}
+
+.articles--item {
+    position: relative;
+    float: left;
+    width: 22%;
+    padding: 20px 20px 80px;
+    background-color: $secondary;
+    
+    &.two,
+    &.three,
+    &.four {
+        margin-left: 4%;
+    }
+    
+    @include bp(1440) {
+        width: 48%;
+        margin-bottom: 40px;
+        
+        &.two,
+        &.four {
+            margin-left: 4%;
+        }
+        
+        &.three {
+            margin-left: 0;
+        }
+    }
+    
+    @include bp(840) {
+        width: 100%;
+        margin: 0 0 40px!important;
+    }
+}
+
+.articles--title {
+    margin-bottom: 16px;
+    color: $white;
+}
+
+.articles--description {
+    margin-bottom: 10px;
+    color: $lilia;
+}
+
+.articles--button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    max-width: 100%;
+}
